@@ -1,0 +1,605 @@
+<head>
+
+<title>CS106AP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<link href="//web.stanford.edu/class/cs106ap/plugins/bootstrap-custom/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//web.stanford.edu/class/cs106ap/style.css">
+
+<!-- Java Script -->
+<script src="//web.stanford.edu/class/cs106ap/plugins/jquery.min.js"></script>
+<script src="//web.stanford.edu/class/cs106ap/plugins/moment.min.js"></script>
+<script src="//web.stanford.edu/class/cs106ap/plugins/bootstrap-custom/js/bootstrap.min.js"></script>
+<script src="//web.stanford.edu/class/cs106ap/plugins/ace/ace.js" type="text/javascript"></script>
+
+<!-- Stanford -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="//web.stanford.edu/class/cs106ap/">CS106AP</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lectures <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="//web.stanford.edu/class/cs106ap/lectures/Code-1 Introduction.html">01 Introduction</a></li>
+      <!--       <li><a href="//web.stanford.edu/class/cs106ap/lectures/01-CS106J-Introduction">01 CS106J Introduction</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/lectures/02-Programming-In-Karel">02 Programming In Karel</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/lectures/03-Stepwise-Refinement">03 Stepwise Refinement</a></li> -->
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Handouts<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/CS106AP_Syllabus.html">01 Syllabus</a></li>
+    <!--         <li><a href="//web.stanford.edu/class/cs106ap/handouts/01-GeneralInformation.pdf">01 General Information</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/02-Calendar.pdf">02 Course Calendar</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/03-ProgrammingInKarel.pdf">03 Programming In Karel</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/03A-ClassExamples.pdf">03A Class Examples</a></li>
+            <!-- <li><a href="//web.stanford.edu/class/cs106ap/handouts/3 - Course Communication.pdf">3-Course Communication</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/4 - Honor Code.pdf">4-Honor Code</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/5 - Karel In Eclipse.pdf">5-Karel in Eclipse</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/6 - Assignment-1.pdf">6-Assignment-1</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/7 - Submitting Work.pdf">7-Submitting Work</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/handouts/8 - Karel Examples.pdf">8-Karel Examples</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           
+          <!--   <li><a href="https://goo.gl/forms/x2HTAbJ8soIMCztg1">0-Who are you</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/assn/karel.html">1-Karel</a></li> -->
+            <li><a>1-TBD</a></li>
+            <li><a>2-TBD</a></li>
+            <li><a>3-TBD</a></li>
+            <li><a>4-TBD</a></li>
+            <li><a>...</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sections <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://cs198.stanford.edu/cs198/auth/default.aspx">Section signup</a></li>
+            <li><a href="//web.stanford.edu/class/cs106ap/sectionInfo.html">List of all section times/locations</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="//web.stanford.edu/class/cs106ap/schedule.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Schedule</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://goo.gl/forms/wCWcgD3hij5wcGyu2"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Feedback Form</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="container">
+			
+		<!-- Header -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="pageHeader">
+					<h1>
+						Course Schedule
+					</h1>
+					
+
+				</div>
+				<hr/>
+
+				<!--<center>
+				<img style="width:80%" src="//web.stanford.edu/class/cs106ap/img/overview/overview.png">	
+			</center>-->
+			</div>
+		</div>
+
+			
+
+		<!--<div class="row">
+			<div class="col-sm-12">
+				<p>
+					In CS106B you are going to learn great things! The main objective of the course is to learn how to model and solve complex problems with computers.
+				</p>
+
+				<hr/>
+			</div>
+		</div>-->
+		
+		
+				
+		<div class="row">
+			<div class="col-sm-12">
+				<p>
+					The schedule is subject to change.
+				</p>
+                                
+				<p>
+<!--
+    Holidays Spring 2017:
+    Jan 16th MLK
+    Feb 20th President's Day
+    First day of class: April 3rd
+    Last day of class: June 7th
+
+    Assns:
+    1. Karel
+    2. Simple JS
+    3. Breakout
+    4. Hangman
+    5. Yahtzee
+    6. FacePamphlet
+-->
+<div class="table-responsive">
+  <table class="table table-bordered">
+<thead>
+  <tr>
+    <th style="col-sm-3">Week</th>
+    <th style="col-sm-3">Monday</th>
+    <th style="col-sm-3">Wednesday</th>
+    <th style="col-sm-3">Friday</th>
+  </tr>
+</thead>
+<tr>
+  <td class="calendarWeekCell">1</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+ <!--      <div class="inOut">
+        <br><i>No Assigned Reading</i>
+      </div> -->
+      <p class="subtleHeading">January 8th</p>
+      Administration<br/>
+      Course overview<br/>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: [READING]
+      </div> -->
+      <p class="subtleHeading">January 10th</p>
+      Binky<br/>
+      Syntax errors, logic<br/>
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 1.4-1.5
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 12th</p>
+      Loops<br/>
+      Functions<br/>
+<!--       Problem-solving in Karel<br/>
+      Problem Decomposition<br/>
+      The idea of an algorithm<br/> -->
+  </td>
+</tr>
+<tr>
+  <td class="calendarWeekCell">2</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections: 2.1-2.4
+        <br>Lecturing: Eric
+      </div> -->
+      <p class="subtleHeading">January 15th</p>
+      MLK holiday - No class <br/>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 2.5-2.6
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 17th</p>
+      Image processing<br/>
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 3.1-3.5
+        <br>Lecturing: Eric
+      </div> -->
+      <p class="subtleHeading">January 19th</p>
+      Image processing continued<br/>
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">3</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 4.1-4.2
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 22nd</p>
+      Image processing continued<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 4.3-4.4
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 24th</p>
+      Drawing<br/>
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 5.1-5.4
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 26th</p>
+      Drawing continued<br/>
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">4</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 4.1-4.2
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 29th</p>
+      Strings, files, lists, decomposition<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 4.3-4.4
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">January 31st</p>
+       Strings, files, lists, decomposition continued<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+<!--       <div class="inOut">
+        <br>Read: Sections 5.1-5.4
+        <br>Lecturing: Jerry
+      </div> -->
+      <p class="subtleHeading">February 2nd</p>
+      Strings, files, lists, decomposition continued<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">5</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 5th</p>
+      File processing<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 7th</p>
+       Midterm review<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 9th</p>
+      MIDTERM (in-class)<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">6</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 12th</p>
+      Dictionaries, efficient storage of mass information<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 14th</p>
+      Dictionaries, efficient storage of mass information<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 16th</p>
+      Dictionaries, efficient storage of mass information<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">7</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 19th</p>
+      Presidents' Day - No class<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 21st</p>
+      More complex algorithms<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 23rd</p>
+      Whole-program issues<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">8</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 26th</p>
+      Advanced topics<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">February 28th</p>
+      Advanced topics<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 2nd</p>
+      Advanced topics<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">9</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 5th</p>
+      Advanced topics<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 7th</p>
+      Advanced topics<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 9th</p>
+      Advanced topics<br/>  
+
+  </td>
+</tr>
+ <tr>
+  <td class="calendarWeekCell">10</td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 12th</p>
+      Conclusions<br/>  
+
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">March 14th</p>
+      No class<br/>  
+    </div>
+  </td>
+  <td class="calendarCell col-sm-3">
+    <div style="position:relative">
+      <p class="subtleHeading">>March 16th</p>
+      No class<br/>  
+
+  </td>
+</tr>
+  </table>
+</div>
+				</p>
+				<!--<hr/>-->
+			</div>
+		</div>
+
+		<!--<div class="row">
+			<div class="col-sm-12">
+				<h2>
+					Discussion Sections
+				</h2>
+				<p>
+					In addition to lecture, you must sign up for a weekly 50-minute section. In order to take
+CS 106B, you must sign up for a section between 5:00P.M., Thursday, January 7, and the
+close of enrollments at 5:00P.M. on Sunday, January 10. Please use the signup form at
+<a href="http://cs198.stanford.edu/section/">http://cs198.stanford.edu/section/</a>. Important note: Do not use Axess to sign
+up for sections; section enrollments made through Axess are simply ignored.
+				</p>
+				<hr/>
+			</div>
+		</div>
+
+		<div class="row" id="grades">
+			<div class="col-sm-12">
+				<h2>
+					Grades
+				</h2>
+				<p>
+					Your final grade in this course will be calculated using the following weights:
+				</p>
+				<div class="well" style="width:280px">
+					<h4>Weights</h4>
+					<table class="table table-condensed" style="margin-bottom:0px;">
+						<tbody>
+							<tr>
+								<td style="width: 180px">Section Participation</td>
+								<td>10%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Programs</td>
+								<td>50%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Midterm</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Final</td>
+								<td>25%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>
+					
+					Each of the exams is scaled to take account of the difficulty of the exam, which is nearly
+impossible to assess in advance. The other components and the final grade are not
+curved. If everyone does brilliantly in this class, everyone gets an A.
+				</p>
+				<hr/>
+			</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>
+					Programming Assignments
+				</h2>
+				<p>
+					CS 106B requires seven programming assignments, which are due on the dates given in
+the syllabus. Except for Assignment #7 (which is due at the very end of the quarter),
+your section leader will grade each of your assignments and then discuss how well you
+have done (and how you can improve on future assignments) in an interactive,
+one-on-one session. Assignments are graded separately for functionality and style.
+				</p>
+				<hr/>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col-sm-8">
+			<h2>
+				Late Policy
+			</h2>
+		</div>
+			<div class="col-sm-9">
+				
+
+				<div class="subsection">
+					
+					<p>
+						Each of the assignments is due at 5:00P.M. on the day specified in the syllabus.
+Assignments are submitted electronically using the procedure described in the first
+assignment. Important note: all assignments are due at 5:00P.M. sharp on the dates
+indicated on the assignment handout. Assignments submitted after 5:00 will be
+considered late.
+					</p>
+					<p>
+						Because each of you will probably come upon some time during the quarter where so
+much work piles up that you need a little extra time, every student begins the quarter with
+three free “late days.” To avoid any ambiguity, a “day” is defined as a class day. Thus, if
+your assignment was due on Friday but turned in the following Monday, that assignment
+would be one day late. Note: You cannot use late days on Assignment #7, which is due at the end of the quarter. After your late days for the quarter are exhausted, programs are assessed a late
+penalty of one category point per late day used (a ✓+ turns into a ✓, and so forth). Late
+days are valuable, and it pays to keep some around for the harder assignments toward the
+end of the quarter. In all cases, assignments must be turned in within a calendar week of
+their published due date.
+					</p>
+
+					<p>
+						In special circumstances (such as extended medical problems or other emergencies),
+extensions may be granted beyond the late days. To request an extension, send e-mail to
+the TA (Megan Faulk <mfaulk@stanford.edu>) no later than 24 hours before the
+program is due. Only the TA is authorized to approve such extensions. In particular, do
+not ask your section leader.
+					</p>
+				</div>
+
+				
+
+				
+
+			</div>
+			<div class="col-sm-3">
+				
+				<div class="faq well">
+					<h4 class="subheading">How Many Late Days?</h4>
+					<p>
+						Three late days. A “day” is defined as a class day.
+					</p>
+
+				</div>
+
+			</div>
+
+		</div>-->
+
+
+	
+
+<div class="row">
+  <div class="col-md-12">
+	<hr>
+	<div class="footer">
+	  <p class="pull-left">
+		&#169; Stanford 2017 &#124; Site design by Chris Piech.
+		CS106A has been developed over decades by many talented teachers.
+      </p>
+	  <p class="pull-left">
+        CS106AP covers the same material as CS 106A, but does so using Python instead of Java. <br/>
+        For any issues with the website, please send an email to the head TA Jason. 
+	  </p>
+	</div>
+  </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74362126-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	</div>
+
+	<script type="text/javascript">
+		$( ".moment" ).each(function( i ) {
+			var date = $(this).html()
+
+			var fromStr = moment(date, "YYYYMMDD").fromNow()
+
+			$(this).html(fromStr)
+		  });
+		//alert(moment("20160101", "YYYYMMDD").fromNow())
+	</script>
+
+</body>

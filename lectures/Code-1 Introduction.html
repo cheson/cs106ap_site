@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Code-1 Introduction</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Code-1%20Introduction_files/style.css" type="text/css">
+
+</head>
+<body>
+<script>
+// arg is button followed by div which it does show/hide alternately
+function showHide(button) {
+  if (button.nextElementSibling.style.display == "block") {
+    button.nextElementSibling.style.display = "none";
+  } else {
+    button.nextElementSibling.style.display = "block";
+  }
+}
+</script>
+
+<h2>Fundamental Equation of Computers</h2>
+
+
+<p>
+The fundamental equation of computers is:
+
+
+</p><div><button onclick="showHide(this)">Show</button>
+<div style="display: none;">
+<p style="font-size:225%">&nbsp;&nbsp;Computer = Powerful + Stupid
+</p></div>
+</div>
+
+
+<ul class="slide">
+
+<li>CPU chip in the computer runs "machine" code
+<br>-Billions of machine "operations" per second
+</li><li>Stupid
+<br>-Machine operations are simple and mechanical
+<br>-e.g. a = b + c
+<br>-Nothing like "insight" or "thinking"
+<br>-Insight= human programmer, CPU just runs their code
+</li></ul>
+
+
+<h2>Programming</h2>
+<ul class="slide">
+<li>Programmer write the code (e.g. Python)
+</li><li>Python code is translated to machine code
+</li><li>CPU runs that
+</li><li>Code has weirdly inflexible syntax (see below)
+</li><li>This reflects the CPU's limitations .. inflexible!
+</li><li>e.g. grocery list
+</li></ul>
+
+
+
+
+<h2>Key Preface: Thinking About Syntax Errors</h2>
+
+<ul class="slide">
+<li>Syntax -- code is structured for the computer
+</li><li>Very common error -- type in code, with slight syntax problem
+</li><li>Professional programmers make that sort of "error" all the time
+</li><li>Fortunately, very easy to fix ... don't worry about it
+</li><li>Not a reflection of some flaw in the programmer
+</li><li>Just the nature of typing ideas into the mechanical computer language
+</li><li>Beginners can be derailed by syntax step, thinking they are making some big error
+</li><li>Exercise to inoculate you all: a bunch of typical syntax errors + fixing them
+</li><li>Fixing these little errors is a small, normal step
+</li></ul>
+
+
+
+
+<h2>Binky Introduction</h2>
+<ul class="slide">
+<li>"Binky" code toy we'll use for a couple days
+</li><li>Binky is a robot in a 2d world
+</li><li>Binky has very simple capabilities
+</li><li>Introduce a few code ideas this way
+</li></ul>
+
+
+<h2>Binky Verbs</h2>
+<ul class="slide">
+<li>Things the robot can do:
+</li><li>move()
+</li><li>left()
+</li><li>right()
+</li><li>paint('blue')
+</li><li># 'red' and 'green' work too
+</li></ul>
+
+
+<h2>Binky Code Example1</h2>
+
+<pre>def fun(binky):
+    binky.move()
+    # binky just moved forward one square
+    binky.paint('blue')
+</pre>
+
+
+<h2>Example1 Points</h2>
+<ul class="slide">
+<li>"def" - defines a function
+<br>-named "fun" in this case
+</li><li>function run the lines inside from top to bottom
+</li><li>"binky" refers to a binky object (noun)
+</li><li>"binky.move()"
+<br>-run the "move()" function of binky
+<br>-<b>noun.verb</b> style
+</li><li><b>#</b> - a comment, computer ignores the rest of the line
+</li><li>This all looks weird, but is essentially simple
+</li></ul>
+
+
+
+<p>Try Some Parlante.org Exercises... (first time used ever)
+
+
+</p><h2>Run Code -- Get Errors -- Fix!</h2>
+<ul>
+<li>Not grading these, just for demos and to get your feet wet
+</li><li><a href="https://parlante.org/make/code1/binky1">binky1</a> - this one works
+</li><li><a href="https://parlante.org/make/code1/binky2">binky2</a>
+</li><li><a href="https://parlante.org/make/code1/binky3">binky3</a>
+</li><li><a href="https://parlante.org/make/code1/binky4">binky4</a>
+</li><li><a href="https://parlante.org/make/code1/binky5">binky5</a>
+</li><li><a href="https://parlante.org/make/code1/binky6">binky6</a>
+</li><li><a href="https://parlante.org/make/code1/binky7">binky7</a>
+</li><li>Main syntax points:
+</li><li>-noun.verb() must be exactly right
+</li><li>-start/end quote marks required
+</li><li>-indention straight, not ragged
+</li><li>-sometimes the error message has the right line number
+</li></ul>
+
+
+
+<h2>Last: Write Some Code</h2>
+<ul>
+<li>A couple minutes to solve this one (not graded)
+</li><li><a href="https://parlante.org/make/code1/binky-corners">binky-corners</a>
+</li></ul>
+
+
+
+
+
+
+</body></html>
